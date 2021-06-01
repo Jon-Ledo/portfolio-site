@@ -1,0 +1,77 @@
+.main {
+  h2 {
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+  }
+
+  h2::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 5px;
+    width: 28vw;
+    // max-width: 30vw;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 5px;
+    width: 28vw;
+    // max-width: 
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+  }
+}
+
+.main__bubble {
+  width: 284px;
+  height: 284px;
+  border: 1px solid red;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #F2F2EC;
+  
+  border: 6px solid $white;
+  box-shadow: 2px 2px 5px $grey inset, -2px -2px 5px $grey inset;
+  position: relative;
+
+  // get an opague background for the containers
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../../assets/honeycomb-34984_640.png);
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+
+  &.main__bubble3,
+  &.main__bubble2 {
+    margin-left: -20px;
+  }
+
+  .fab {
+    margin-top: 50px; // remove for more responsive later!!! FIXME
+    font-size: 4rem;
+  }
+
+  .main__bubble-title {
+    font-size: 3rem;
+    margin: 5px;
+    color: $red;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+}

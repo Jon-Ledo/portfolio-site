@@ -1,0 +1,30 @@
+@import './partials/setup';
+@import './partials/variables';
+@import './partials/header';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $white-background;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 960px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

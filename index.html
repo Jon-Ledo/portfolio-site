@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jon Ledo's Portfolio</title>
+
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+  <header id="header" class="header">
+    <nav class="nav-bar flex">
+      <div class="wrapper hamburger">
+
+        <div class="nav-bar__logo">
+          <span>Ledo</span>
+          <!-- <span class="nav-bar__logo-subtext">studio</span> -->
+          <!-- <span>studio</span> -->
+        </div>
+
+        <!-- drop down -->
+        <input type="checkbox" id="burger-menu">
+        <label for="burger-menu"><i class="fas fa-bars"></i></label>
+
+        <ul class="nav-bar__list-container flex">
+          <li><a href="#header" class="nav-bar__home-btn">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
+    </nav>
+
+    <div class="wrapper">
+
+      <h1>Front end Developer</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque hic cumque provident placeat, asperiores
+        perspiciatis exercitationem?</p>
+
+      <div class="header__img-container">
+        <img src="https://www.placecage.com/g/600/385" alt="">
+      </div>
+
+    </div>
+  </header>
+
+  <section id="main" class="main">
+    <h2>Our Main Services</h2>
+    <div class="main__bubble main__bubble1">
+      <i>icon</i>
+      <h3 class="main__bubble title">Web Design</h3>
+      <p>Website Design</p>
+      <p>Website Design</p>
+      <p>Website Design</p>
+      <p>Website Design</p>
+    </div>
+
+    <div class="main__bubble main__bubble2">
+      <i>icon</i>
+      <h3 class="main__bubble title">Web Development</h3>
+      <p>Web Development</p>
+      <p>Web Development</p>
+      <p>Web Development</p>
+      <p>Web Development</p>
+    </div>
+
+    <div class="main__bubble main__bubble3">
+      <i>icon</i>
+      <h3 class="main__bubble title">Quality Service</h3>
+      <p>Service</p>
+      <p>Service</p>
+      <p>Service</p>
+      <p>Service</p>
+    </div>
+  </section>
+
+  <section id="portfolio" class="portfolio">
+    <h2>Some of my Recent Work</h2>
+
+    <!-- image gallery with clickable links -->
+    <div class="gallery">
+
+      <div class="gallery__item">
+        <a href="#">
+          <img src="https://www.placecage.com/gif/297/183" alt="">
+        </a>
+        <p class="gallery__description">Text here</p>
+      </div>
+
+      <div class="gallery__item">
+        <a href="#">
+          <img src="https://www.placecage.com/gif/297/183" alt="">
+        </a>
+        <p class="gallery__description">Text here</p>
+      </div>
+
+      <div class="gallery__item">
+        <a href="#">
+          <img src="https://www.placecage.com/gif/297/183" alt="">
+        </a>
+        <p class="gallery__description">Text here</p>
+      </div>
+
+    </div>
+
+    <button><a href="#portfolio">See all works</a></button>
+  </section>
+
+  <section id="navigation" class="navigation">
+    <div class="navigation__col">
+      <h4>Title of Column</h4>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+    </div>
+    <div class="navigation__col">
+      <h4>Title of Column</h4>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+    </div>
+    <div class="navigation__col">
+      <h4>Title of Column</h4>
+      <ul>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+        <li>item</li>
+      </ul>
+    </div>
+
+    <div id="contact" class="contact-container">
+      <form action="submit">
+        <legend>Let's get in touch</legend>
+
+        <label for="name" class="sr-only">Your name here</label>
+        <input type="text">
+
+        <label for="email" class="sr-only">Your email here</label>
+        <input type="email">
+
+        <label for="message" class="sr-only">Your message here</label>
+        <textarea name="message" id="message" cols="30" rows="6"></textarea>
+
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&#169; 2021. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>

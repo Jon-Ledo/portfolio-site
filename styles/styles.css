@@ -248,7 +248,8 @@ html {
   font-size: 4rem;
   width: 130px;
   height: 130px;
-  background-color: #BD3B13;
+  background-image: url(../../../assets/layer-logo.png);
+  background-color: #AC300A;
   position: absolute;
   top: -50%;
   border-radius: 50%;
@@ -294,7 +295,7 @@ html {
   text-transform: uppercase;
   font-size: 2.4rem;
   color: #FFFFFF;
-  padding: 10px 15px;
+  padding: 15px;
 }
 
 .nav-bar .nav-bar__list-container li:nth-of-type(n+2) {
@@ -307,6 +308,24 @@ html {
   margin-left: 0;
   -webkit-box-shadow: 1px 1px rgba(165, 164, 164, 0.5);
           box-shadow: 1px 1px rgba(165, 164, 164, 0.5);
+  padding: 7px 10px;
+}
+
+h1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #4A4A43;
+  text-shadow: 2px 2px #CDCDCD;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+
+p {
+  text-align: center;
+  font-size: 2.2rem;
+  width: 70%;
+  margin: 0 auto 40px;
 }
 
 /* hide the checkbox */
@@ -326,12 +345,16 @@ html {
 
 body {
   background-color: #F0EFE9;
+  color: #333333;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+  border: 10px solid #FCFBF6;
+  -webkit-box-shadow: 4px 4px #E2E2E1;
+          box-shadow: 4px 4px #E2E2E1;
 }
 
 .wrapper {

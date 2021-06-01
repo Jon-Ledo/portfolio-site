@@ -11,8 +11,7 @@
     font-size: 4rem;
     width: 130px;
     height: 130px;
-    background-image: url(../../../assets/layer-logo.png);
-    background-color: $red-logo;
+    background: url(../../../assets/layer-logo.png) $red-logo;
     position: absolute;
     top: -50%;
     border-radius: 50%;
@@ -89,7 +88,13 @@ p {
   text-align: center;
   font-size: 2.2rem;
   width: 70%;
-  margin: 0 auto 40px;
+  margin: 0 auto;
+}
+
+img {
+  border: 10px solid $white;
+  box-shadow: 4px 4px #E2E2E1;
+  margin: 40px 0px;
 }
 
 

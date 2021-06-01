@@ -380,6 +380,7 @@ img {
   border-radius: 50%;
   text-align: center;
   background-color: #F2F2EC;
+  z-index: 0;
   border: 6px solid #FCFBF6;
   -webkit-box-shadow: 2px 2px 5px #CECEC7 inset, -2px -2px 5px #CECEC7 inset;
           box-shadow: 2px 2px 5px #CECEC7 inset, -2px -2px 5px #CECEC7 inset;
@@ -396,15 +397,18 @@ img {
   background-image: url(../../../assets/honeycomb-34984_640.png);
   border-radius: 50%;
   opacity: 0.3;
+  z-index: -1;
 }
 
 .main__bubble.main__bubble3, .main__bubble.main__bubble2 {
   margin-left: -20px;
 }
 
-.main__bubble .fab {
-  margin-top: 50px;
+.main__bubble .fab,
+.main__bubble .fas {
+  margin: 10px;
   font-size: 4rem;
+  color: #BD3B13;
 }
 
 .main__bubble .main__bubble-title {
@@ -415,6 +419,8 @@ img {
 
 .main__bubble p {
   font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 html {

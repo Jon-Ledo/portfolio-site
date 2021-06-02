@@ -3,32 +3,44 @@
 @import './partials/header';
 @import './partials/main';
 @import './partials/portfolio';
+@import './partials/contact-bar';
 
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: $white-background;
+  background: $white-background;
   color: $black-text;
+  font-family: $body-font;
 }
 
 img {
   width: 100%;
   height: auto;
+  // width: 297px;
+  // height: 183px;
   display: block;
   margin: 0;
   border: 10px solid $white;
 }
 
-h2 {
+h2,
+legend {
   font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
+  font-family: $header-font;
+  color: $header-text;
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 30px;
 }
 
 .wrapper {
-  max-width: 960px;
+  max-width: 980px;
   width: 85%;
   margin: 0 auto;
 }

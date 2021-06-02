@@ -44,7 +44,9 @@
     margin-left: calc(100% - 260px);
     // position: relative;
 
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active {
         background: $red-accent;
       }
 
@@ -86,7 +88,24 @@
     
     img {
       outline: 1px solid $grey;
+      width: 297px;
+      height: 183px;
+      position: relative;
+      
+      // &:before {
+      //   content: '';
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   right: 0;
+      //   bottom: 0;
+        
+      //   &:before:hover {
+      //     background-color: $grey;
+      //   }
+      // }
     }
+
 
     &:nth-child(3n+1) {
       margin-left: 0; // only when 3 images side by side 

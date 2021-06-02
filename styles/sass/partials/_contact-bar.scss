@@ -1,41 +1,51 @@
-.navigation {
+.contact {
   background: $black-background;
   color: $white-text;
   height: 275px;
+  border-top: 4px solid $grey;
+  position: relative;
 
-  .navigation__contact {
+  .contact__container {
     display: flex;
     justify-content: space-between;
-  }
 
-  .navigation__col {
-    width: 60%;
+    .contact__container-socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 40%;
+      height: 275px;
+      z-index: 2;
 
-    // ul {
-    //   padding-left: 0;
-    //   flex-wrap: wrap;
-
-    //   li {
-    //     margin: 15px;
-    //     list-style: none;
-    //     border: 1px solid red;
+      .fab {
+        font-size: 5rem;
+        color: $grey;
+        text-shadow: 0px 2px 2px #333;
         
-    //     p {
-    //       font-size: 1.2rem;
-    //     }
-  
-    //     .fab,
-    //     .fas,
-    //     .devicon-sass-original {
-    //       font-size: 2.4rem;
-    //       color: $red;
-    //     }
-    //   }
-    // }
+        &:focus,
+        &:active,
+        &:hover {
+          color: $red;
+        }
+      }
+    }
   }
 }
 
-.contact-container {
+.contact:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../../assets/seamless-2482930_1280.png);
+  // background-position: center;
+  background-size: contain;
+  opacity: 0.1;
+}
+
+.contact-form {
   position: relative;
 
   form {
@@ -78,6 +88,9 @@
       width: 80%;
       font-size: 1.2rem;
       padding: 5px;
+      background-color: $white-input;
+      color: $header-text;
+      font-weight: bold;
     }
 
     textarea {
@@ -90,6 +103,9 @@
       padding: 5px;
       border: 1px solid $grey;
       border-radius: 3px;
+      background-color: $white-input;
+      color: $header-text;
+      font-weight: bold;
     }
 
     button {
@@ -105,7 +121,9 @@
       font-size: 1.2rem;
       cursor: pointer;
 
-      &:hover {
+      &:hover,
+      &:focus,
+      &:active {
         background: $red-accent;
       }
     }

@@ -9,6 +9,9 @@
 
   <script src="https://kit.fontawesome.com/ed48cba7cc.js" crossorigin="anonymous"></script>
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Oswald&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -95,38 +98,49 @@
   </section>
 
   <section id="portfolio" class="portfolio">
-    <h2>Some of my Recent Work</h2>
+    <div class="wrapper">
 
-    <!-- image gallery with clickable links -->
-    <div class="gallery">
+      <h2>Recent Work</h2>
 
-      <div class="gallery__item">
-        <a href="#">
-          <img src="https://www.placecage.com/g/297/183" alt="">
-        </a>
-        <p class="gallery__description">Text here</p>
+      <!-- image gallery with clickable links -->
+      <div class="gallery">
+
+        <div class="gallery__item">
+          <a href="https://priceless-johnson-31861e.netlify.app/" target="_blank">
+            <img src="https://www.placecage.com/g/297/183" alt="">
+          </a>
+          <p class="gallery__description">Online Converter Page - React, RESTful API</p>
+        </div>
+
+        <div class="gallery__item">
+          <a href="https://pokemon-blackjack.netlify.app/" target="_blank">
+            <img src="https://www.placecage.com/g/297/183" alt="">
+          </a>
+          <p class="gallery__description">Pokemon Blackjack - React, RESTful API, group project</p>
+        </div>
+
+        <div class="gallery__item">
+          <a href="https://geoffjon.github.io/thriftyDragon/" target="_blank">
+            <img src="https://www.placecage.com/g/297/183" alt="">
+          </a>
+          <p class="gallery__description">Thrifty Dragon - JavaScript, RESTful API, paired project</p>
+        </div>
+
+        <div class="gallery__item">
+          <a href="https://jon-ledo.github.io/jonathan-ledo-project-one-planted/" target="_blank">
+            <img src="https://www.placecage.com/g/297/183" alt="">
+          </a>
+          <p class="gallery__description">Landing Page - Responsive Design</p>
+        </div>
+
       </div>
 
-      <div class="gallery__item">
-        <a href="#">
-          <img src="https://www.placecage.com/g/297/183" alt="">
-        </a>
-        <p class="gallery__description">Text here</p>
-      </div>
-
-      <div class="gallery__item">
-        <a href="#">
-          <img src="https://www.placecage.com/g/297/183" alt="">
-        </a>
-        <p class="gallery__description">Text here</p>
-      </div>
+      <button type="button"><a href="https://github.com/Jon-Ledo" target="_blank">Visit my GitHub</a></button>
 
     </div>
-
-    <button><a href="#portfolio">See all works</a></button>
   </section>
 
-  <section id="navigation" class="navigation">
+  <section id="navigation" class="navigation flex">
     <div class="navigation__col">
       <h4>Title of Column</h4>
       <ul>
@@ -156,7 +170,7 @@
     </div>
 
     <div id="contact" class="contact-container">
-      <form action="submit">
+      <form action="submit" class="flex">
         <legend>Let's get in touch</legend>
 
         <label for="name" class="sr-only">Your name here</label>

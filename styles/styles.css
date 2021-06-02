@@ -310,7 +310,7 @@ html {
   padding: 7px 10px;
 }
 
-h1 {
+header h1 {
   font-size: 7rem;
   text-transform: uppercase;
   text-align: center;
@@ -320,15 +320,14 @@ h1 {
   margin-bottom: 30px;
 }
 
-p {
+header p {
   text-align: center;
   font-size: 2.2rem;
   width: 70%;
   margin: 0 auto;
 }
 
-img {
-  border: 10px solid #FCFBF6;
+header img {
   -webkit-box-shadow: 4px 4px #E2E2E1;
           box-shadow: 4px 4px #E2E2E1;
   margin: 40px 0px;
@@ -346,8 +345,6 @@ img {
 }
 
 .main h2 {
-  font-size: 4rem;
-  text-align: center;
   position: relative;
 }
 
@@ -423,6 +420,101 @@ img {
   letter-spacing: 1px;
 }
 
+.portfolio .wrapper {
+  position: relative;
+}
+
+.portfolio h2 {
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio h2::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 5px;
+  width: 25vw;
+  border-top: 1px solid #CECEC7;
+  border-bottom: 1px solid #CECEC7;
+  z-index: -1;
+}
+
+.portfolio h2::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 5px;
+  width: 25vw;
+  border-top: 1px solid #CECEC7;
+  border-bottom: 1px solid #CECEC7;
+  z-index: -1;
+}
+
+.portfolio button {
+  background: #BD3B13;
+  -webkit-box-shadow: 4px 4px rgba(189, 59, 19, 0.2);
+          box-shadow: 4px 4px rgba(189, 59, 19, 0.2);
+  padding: 15px 0;
+  border: none;
+  margin-bottom: 150px;
+  margin-left: calc(100% - 260px);
+}
+
+.portfolio button::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 110px;
+  height: 5px;
+  border-top: 1px solid #CECEC7;
+  border-bottom: 1px solid #CECEC7;
+}
+
+.portfolio button a {
+  font-size: 2.4rem;
+  padding: 15px 30px;
+  text-decoration: none;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-shadow: 2px 2px rgba(189, 59, 19, 0.2);
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .gallery__item {
+  width: 300px;
+  height: auto;
+  margin-left: 30px;
+}
+
+.gallery .gallery__item img {
+  outline: 1px solid #CECEC7;
+}
+
+.gallery .gallery__item:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.gallery .gallery__description {
+  font-size: 1.4rem;
+  margin-top: 15px;
+  margin-bottom: 45px;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -436,6 +528,14 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0;
+  border: 10px solid #FCFBF6;
+}
+
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .wrapper {

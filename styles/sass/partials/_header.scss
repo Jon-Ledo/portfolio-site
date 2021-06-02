@@ -72,29 +72,30 @@
   }
 }
 
+header {
+  h1 {
+    // change back to 9rem after font installed
+    font-size: 7rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $header-text;
+    text-shadow: 2px 2px $text-shadow;
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
 
-h1 {
-  // change back to 9rem after font installed
-  font-size: 7rem;
-  text-transform: uppercase;
-  text-align: center;
-  color: $header-text;
-  text-shadow: 2px 2px $text-shadow;
-  margin-top: 90px;
-  margin-bottom: 30px;
-}
+  p {
+    text-align: center;
+    font-size: 2.2rem;
+    width: 70%;
+    margin: 0 auto;
+  }
 
-p {
-  text-align: center;
-  font-size: 2.2rem;
-  width: 70%;
-  margin: 0 auto;
-}
+  img {
+    box-shadow: 4px 4px #E2E2E1;
+    margin: 40px 0px;
+  }
 
-img {
-  border: 10px solid $white;
-  box-shadow: 4px 4px #E2E2E1;
-  margin: 40px 0px;
 }
 
 

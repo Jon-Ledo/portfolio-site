@@ -563,7 +563,7 @@ header img {
   color: #BD3B13;
 }
 
-.contact:before {
+.contact::before {
   content: '';
   position: absolute;
   top: 0;

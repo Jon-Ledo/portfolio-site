@@ -29,11 +29,6 @@
       text-shadow: 2px 2px 2px $red-accent;
       text-transform: uppercase;
     }
-
-    // .nav-bar__logo-subtext {
-    //   font-size: 2rem;
-    //   font-family: $header-font;
-    // }
   }
 
   .nav-bar__logo:before {
@@ -72,6 +67,8 @@
       box-shadow: 1px 1px rgba(165, 164, 164, 0.5);
       padding: 7px 10px;
     }
+
+    
   }
 }
 
@@ -102,16 +99,24 @@ header {
 }
 
 
-/* hide the checkbox */
+// Hide the checkbox
+// NOTE burger menu not being used until more nav options implemented
 .hamburger input[type='checkbox'],
 .hamburger label {
 	display: none;
 }
 
 	// burger menu
-	#burger-menu,
-	.drop-menu label {
-		float: right;
+  .hamburger {
+    position: relative;
+  }
+
+	.burger-menu,
+	.hamburger label {
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    font-size: 4rem;
 	}
 
 

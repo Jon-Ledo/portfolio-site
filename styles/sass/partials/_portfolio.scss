@@ -50,16 +50,14 @@
         background: $red-accent;
       }
 
+    // make this positioned next to something else > button hovers red 
     &::after {
     content: '';
     position: absolute;
-    // top: 0;
     left: 0;
     right:0;
     bottom: 110px;
     height: 5px;
-    // width: 85vw;
-    // max-width: 
     border-top: 1px solid $grey;
     border-bottom: 1px solid $grey;
   }
@@ -106,9 +104,9 @@
       // }
     }
 
-
+    // only when 3 images side by side 
     &:nth-child(3n+1) {
-      margin-left: 0; // only when 3 images side by side 
+      margin-left: 0; 
     }
   }
 

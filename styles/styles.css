@@ -371,7 +371,6 @@ header img {
 .main__bubble {
   width: 284px;
   height: 284px;
-  border: 1px solid red;
   border-radius: 50%;
   text-align: center;
   background-color: #F2F2EC;
@@ -399,16 +398,9 @@ header img {
   margin-left: -20px;
 }
 
-.main__bubble .fab,
-.main__bubble .fas {
-  margin: 10px;
-  font-size: 4rem;
-  color: #BD3B13;
-}
-
 .main__bubble .main__bubble-title {
-  font-size: 3rem;
-  margin: 5px;
+  font-size: 2.8rem;
+  margin-top: 60px;
   color: #BD3B13;
 }
 
@@ -416,6 +408,8 @@ header img {
   font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 1px;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .portfolio .wrapper {
@@ -682,6 +676,7 @@ img {
 }
 
 h2,
+h3,
 legend {
   font-size: 4rem;
   text-align: center;

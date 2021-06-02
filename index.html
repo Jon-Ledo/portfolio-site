@@ -8,6 +8,7 @@
   <title>Jon Ledo's Portfolio</title>
 
   <script src="https://kit.fontawesome.com/ed48cba7cc.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400&family=Oswald&display=swap"
@@ -140,53 +141,88 @@
     </div>
   </section>
 
-  <section id="navigation" class="navigation flex">
-    <div class="navigation__col">
-      <h4>Title of Column</h4>
-      <ul>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-      </ul>
-    </div>
-    <div class="navigation__col">
-      <h4>Title of Column</h4>
-      <ul>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-      </ul>
-    </div>
-    <div class="navigation__col">
-      <h4>Title of Column</h4>
-      <ul>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-        <li>item</li>
-      </ul>
-    </div>
+  <section id="navigation" class="navigation">
+    <div class="wrapper">
 
-    <div id="contact" class="contact-container">
-      <form action="submit" class="flex">
-        <legend>Let's get in touch</legend>
+      <div class="navigation__contact">
 
-        <label for="name" class="sr-only">Your name here</label>
-        <input type="text">
+        <div class="navigation__contact-container">
 
-        <label for="email" class="sr-only">Your email here</label>
-        <input type="email">
+          <div class="navigation__col">
+            <!-- <h2>List of Skills</h2>
+            <ul class="flex">
+              <li>
+                <i class="fab fa-react"></i>
+                <p>React</p>
+              </li>
+              <li>
+                <i class="devicon-sass-original"></i>
+                <p>Sass</p>
+              </li>
 
-        <label for="message" class="sr-only">Your message here</label>
-        <textarea name="message" id="message" cols="30" rows="6"></textarea>
+              <li>
+                <i class="fas fa-mobile-alt"></i>
+                <p>Responsive Design</p>
+              </li>
+              <li>
+                <i class="fab fa-github"></i>
+                <p>Git Hub</p>
+              </li>
+              <li>
+                <i class="fas fa-universal-access"></i>
+                <p>Accessibility</p>
+              </li>
 
-      </form>
+              <li>
+                <i class="fab fa-js"></i>
+                <p>JavaScript</p>
+              </li>
+              <li>
+                <i class="fab fa-css3-alt"></i>
+                <p>CSS</p>
+              </li>
+              <li>
+                <i class="fab fa-html5"></i>
+                <p>HTML</p>
+              </li>
+
+              <li>
+                <i class="fas fa-network-wired"></i>
+                <p>RESTful API</p>
+              </li>
+            </ul> -->
+
+          </div>
+
+        </div>
+
+
+
+        <!-- contact form -->
+        <div id="contact" class="contact-container">
+          <form action="submit" class="flex">
+            <legend>Let's get in touch!</legend>
+
+            <label for="name" class="sr-only">Your name here</label>
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+            <label for="email" class="sr-only">Your email here</label>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+            <label for="message" class="sr-only">Your message here</label>
+            <textarea name="message" id="message" cols="30" rows="4" required placeholder="Your Message"></textarea>
+
+            <button type="submit">Send</button>
+
+          </form>
+        </div>
+
+      </div>
+
     </div>
   </section>
 
-  <footer>
+  <footer class="wrapper">
     <p>&#169; 2021. All rights reserved.</p>
   </footer>
 

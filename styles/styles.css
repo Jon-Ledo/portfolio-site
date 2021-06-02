@@ -246,6 +246,7 @@ html {
 .nav-bar .nav-bar__logo {
   display: inline-block;
   font-size: 4rem;
+  font-family: "Oswald", sans-serif;
   width: 130px;
   height: 130px;
   background: url(../../../assets/layer-logo.png) #AC300A;
@@ -264,10 +265,6 @@ html {
   color: #FCFBF6;
   text-shadow: 2px 2px 2px #842002;
   text-transform: uppercase;
-}
-
-.nav-bar .nav-bar__logo .nav-bar__logo-subtext {
-  font-size: 2rem;
 }
 
 .nav-bar .nav-bar__logo:before {
@@ -293,6 +290,7 @@ html {
   text-shadow: 2px 2px #842002;
   text-transform: uppercase;
   font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
   color: #FFFFFF;
   padding: 15px;
 }
@@ -464,6 +462,10 @@ header img {
   margin-left: calc(100% - 260px);
 }
 
+.portfolio button:hover {
+  background: #842002;
+}
+
 .portfolio button::after {
   content: '';
   position: absolute;
@@ -477,6 +479,7 @@ header img {
 
 .portfolio button a {
   font-size: 2.4rem;
+  font-family: "Oswald", sans-serif;
   padding: 15px 30px;
   text-decoration: none;
   color: #FFFFFF;
@@ -515,13 +518,115 @@ header img {
   margin-bottom: 45px;
 }
 
+.navigation {
+  background: #3E3E37;
+  color: #FFFFFF;
+  height: 275px;
+}
+
+.navigation .navigation__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navigation .navigation__col {
+  width: 60%;
+}
+
+.contact-container {
+  position: relative;
+}
+
+.contact-container form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 8px solid #CECEC7;
+  -webkit-box-shadow: 1px 1px 2px #CECEC7;
+          box-shadow: 1px 1px 2px #CECEC7;
+  border-radius: 50%;
+  width: 388px;
+  height: 388px;
+  position: absolute;
+  right: 0;
+  top: -56px;
+  background: #F0EFE9;
+  z-index: 1;
+}
+
+.contact-container form::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 380px;
+  height: 375px;
+  border-radius: 50%;
+  background: url(../../../assets/honeycomb-34984_640.png);
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.contact-container form legend {
+  font-size: 4rem;
+  padding-top: 35px;
+}
+
+.contact-container form input {
+  margin-top: 10px;
+  border: 1px solid #CECEC7;
+  border-radius: 3px;
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.contact-container form textarea {
+  margin-top: 10px;
+  margin-bottom: 22px;
+  width: 80%;
+  overflow: auto;
+  resize: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  border: 1px solid #CECEC7;
+  border-radius: 3px;
+}
+
+.contact-container form button {
+  background: #BD3B13;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  color: #FCFBF6;
+  border: none;
+  -webkit-box-shadow: 0 3px rgba(189, 59, 19, 0.2);
+          box-shadow: 0 3px rgba(189, 59, 19, 0.2);
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.contact-container form button:hover {
+  background: #842002;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  background-color: #F0EFE9;
+  background: #F0EFE9;
   color: #333333;
+  font-family: "Merriweather", serif;
 }
 
 img {
@@ -532,10 +637,18 @@ img {
   border: 10px solid #FCFBF6;
 }
 
-h2 {
+h2,
+legend {
   font-size: 4rem;
   text-align: center;
   text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  color: #4A4A43;
+}
+
+footer {
+  font-size: 1.2rem;
+  padding: 30px;
 }
 
 .wrapper {

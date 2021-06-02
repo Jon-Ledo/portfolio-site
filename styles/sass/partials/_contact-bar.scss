@@ -1,0 +1,113 @@
+.navigation {
+  background: $black-background;
+  color: $white-text;
+  height: 275px;
+
+  .navigation__contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navigation__col {
+    width: 60%;
+
+    // ul {
+    //   padding-left: 0;
+    //   flex-wrap: wrap;
+
+    //   li {
+    //     margin: 15px;
+    //     list-style: none;
+    //     border: 1px solid red;
+        
+    //     p {
+    //       font-size: 1.2rem;
+    //     }
+  
+    //     .fab,
+    //     .fas,
+    //     .devicon-sass-original {
+    //       font-size: 2.4rem;
+    //       color: $red;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.contact-container {
+  position: relative;
+
+  form {
+    flex-direction: column;
+    border: 8px solid $grey;
+    box-shadow: 1px 1px 2px $grey;
+    border-radius: 50%;
+    width: 388px;
+    height: 388px;
+    position: absolute;
+    right: 0;
+    top: -56px;
+    background: $white-background;
+    z-index: 1;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 380px;
+      height: 375px;
+      border-radius: 50%;
+      background: url(../../../assets/honeycomb-34984_640.png);
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    legend {
+      font-size: 4rem;
+      padding-top: 35px;
+    }
+
+    input {
+      margin-top: 10px;
+      border: 1px solid $grey;
+      border-radius: 3px;
+      width: 80%;
+      font-size: 1.2rem;
+      padding: 5px;
+    }
+
+    textarea {
+      margin-top: 10px;
+      margin-bottom: 22px;
+      width: 80%;
+      overflow: auto;
+      resize: none;
+      font-size: 1.2rem;
+      padding: 5px;
+      border: 1px solid $grey;
+      border-radius: 3px;
+    }
+
+    button {
+      background: $red;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      color: $white;
+      border: none;
+      box-shadow: 0 3px rgba(189, 59, 19, 0.2);
+      letter-spacing: 1px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      cursor: pointer;
+
+      &:hover {
+        background: $red-accent;
+      }
+    }
+  }
+}

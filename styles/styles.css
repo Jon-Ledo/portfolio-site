@@ -274,7 +274,8 @@ footer {
   margin: 0 auto;
 }
 
-.flex {
+.flex,
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,43 +787,19 @@ header img {
   legend {
     font-size: 3rem;
   }
-  .flex {
+  .flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .flex .main__bubble {
+  .flex-container .main__bubble {
     width: 284px;
     height: 284px;
   }
-  .flex .main__bubble::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(../../../assets/honeycomb-34984_640.png);
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: -1;
-  }
-  .flex .main__bubble.main__bubble3, .flex .main__bubble.main__bubble2 {
+  .flex-container .main__bubble.main__bubble3, .flex-container .main__bubble.main__bubble2 {
     margin-left: 0px;
     margin-top: -45px;
-  }
-  .flex .main__bubble .main__bubble-title {
-    font-size: 2.5rem;
-    margin-top: 60px;
-    color: #BD3B13;
-  }
-  .flex .main__bubble p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
-    margin-bottom: 10px;
   }
   .gallery {
     -ms-flex-wrap: wrap;
@@ -832,22 +809,32 @@ header img {
             justify-content: center;
   }
   .gallery .gallery__item {
-    width: 300px;
-    height: auto;
     margin-left: 0px;
-  }
-  .gallery .gallery__item img {
-    outline: 1px solid #CECEC7;
-    width: 297px;
-    height: 183px;
-    position: relative;
   }
   .gallery .gallery__item:nth-child(2n+1), .gallery .gallery__item:nth-child(3n+1) {
     margin-left: 0;
   }
-  .gallery .gallery__description {
-    font-size: 1.4rem;
-    margin-top: 15px;
-    margin-bottom: 45px;
+  .portfolio button {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-bottom: 200px;
+  }
+  .portfolio button::after {
+    display: none;
+  }
+  .portfolio button a {
+    font-size: 2rem;
+  }
+  .contact .contact__container .contact__container-socials {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    top: -145px;
+    width: 100%;
+  }
+  footer {
+    padding: 70px 0px 20px;
   }
 }

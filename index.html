@@ -51,127 +51,128 @@
     </div>
   </header>
 
-  <section id="main" class="main">
-    <div class="wrapper">
+  <main>
 
-      <h2>My Skillset</h2>
+    <section id="main" class="main">
+      <div class="wrapper">
 
-      <div class="flex">
+        <h2>My Skillset</h2>
 
-        <div class="main__bubble main__bubble1">
-          <h3 class="main__bubble-title">Web Development</h3>
-          <p>Website Building</p>
-          <p>Landing Pages</p>
-          <p>Responsive Design</p>
-          <p>Web Accessibility</p>
-          <p>RESTful API</p>
-        </div>
+        <div class="flex flex-container">
 
-        <div class="main__bubble main__bubble2">
-          <h3 class="main__bubble-title">Languages</h3>
-          <p>HTML5</p>
-          <p>CSS3 & SCSS</p>
-          <p>JavaScript</p>
-        </div>
+          <div class="main__bubble main__bubble1">
+            <h3 class="main__bubble-title">Web Development</h3>
+            <p>Website Building</p>
+            <p>Landing Pages</p>
+            <p>Responsive Design</p>
+            <p>Web Accessibility</p>
+            <p>RESTful API</p>
+          </div>
 
-        <div class="main__bubble main__bubble3">
-          <h3 class="main__bubble-title">Skills</h3>
-          <p>Git Collaboration</p>
-          <p>Adaptable</p>
-          <p>React Application</p>
+          <div class="main__bubble main__bubble2">
+            <h3 class="main__bubble-title">Languages</h3>
+            <p>HTML5</p>
+            <p>CSS3 & SCSS</p>
+            <p>JavaScript</p>
+          </div>
+
+          <div class="main__bubble main__bubble3">
+            <h3 class="main__bubble-title">Skills</h3>
+            <p>Git Collaboration</p>
+            <p>Adaptable</p>
+            <p>React Application</p>
+          </div>
+
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
+    <section id="portfolio" class="portfolio">
+      <div class="wrapper">
 
-  <section id="portfolio" class="portfolio">
-    <div class="wrapper">
+        <h2>Recent Work</h2>
 
-      <h2>Recent Work</h2>
+        <!-- image gallery with clickable links -->
+        <div class="gallery">
 
-      <!-- image gallery with clickable links -->
-      <div class="gallery">
+          <div class="gallery__item">
+            <a href="https://priceless-johnson-31861e.netlify.app/" target="_blank">
+              <img src="./assets/site-link-converters.PNG" alt="">
+            </a>
+            <p class="gallery__description">Online Converter Page - React, RESTful API</p>
+          </div>
 
-        <div class="gallery__item">
-          <a href="https://priceless-johnson-31861e.netlify.app/" target="_blank">
-            <img src="./assets/site-link-converters.PNG" alt="">
-          </a>
-          <p class="gallery__description">Online Converter Page - React, RESTful API</p>
+          <div class="gallery__item">
+            <a href="https://pokemon-blackjack.netlify.app/" target="_blank">
+              <img src="./assets/site-link-pokemon-blackjack.PNG" alt="">
+            </a>
+            <p class="gallery__description">Pokemon Blackjack - React, RESTful API, group project</p>
+          </div>
+
+          <div class="gallery__item">
+            <a href="https://geoffjon.github.io/thriftyDragon/" target="_blank">
+              <img src="./assets/site-link-thrifty-dragon.PNG" alt="">
+            </a>
+            <p class="gallery__description">Thrifty Dragon - JavaScript, RESTful API, paired project</p>
+          </div>
+
+          <div class="gallery__item">
+            <a href="https://jon-ledo.github.io/jonathan-ledo-project-one-planted/" target="_blank">
+              <img src="./assets/site-link-landing-page-planted.PNG" alt="">
+            </a>
+            <p class="gallery__description">Landing Page - Predetermined Design</p>
+          </div>
+
         </div>
 
-        <div class="gallery__item">
-          <a href="https://pokemon-blackjack.netlify.app/" target="_blank">
-            <img src="./assets/site-link-pokemon-blackjack.PNG" alt="">
-          </a>
-          <p class="gallery__description">Pokemon Blackjack - React, RESTful API, group project</p>
-        </div>
+        <button type="button"><a href="https://github.com/Jon-Ledo" target="_blank">Visit my GitHub</a></button>
 
-        <div class="gallery__item">
-          <a href="https://geoffjon.github.io/thriftyDragon/" target="_blank">
-            <img src="./assets/site-link-thrifty-dragon.PNG" alt="">
-          </a>
-          <p class="gallery__description">Thrifty Dragon - JavaScript, RESTful API, paired project</p>
-        </div>
+      </div>
+    </section>
 
-        <div class="gallery__item">
-          <a href="https://jon-ledo.github.io/jonathan-ledo-project-one-planted/" target="_blank">
-            <img src="./assets/site-link-landing-page-planted.PNG" alt="">
-          </a>
-          <p class="gallery__description">Landing Page - Predetermined Design</p>
+    <section id="contact" class="contact">
+      <div class="wrapper">
+
+        <div class="contact__container">
+
+          <div class="contact__container-socials">
+
+            <p class="sr-only">Git Hub Link</p>
+            <a href="https://github.com/Jon-Ledo" target="_blank"><i class="fab fa-github"></i></a>
+
+            <p class="sr-only">Twitter Link</p>
+            <a href="https://twitter.com/LedoJon"><i class="fab fa-twitter"></i></a>
+
+            <p class="sr-only">LinkedIn Link</p>
+            <a href="https://www.linkedin.com/in/jonathan-ledo-16a71120a/"><i class="fab fa-linkedin"></i></a>
+
+          </div>
+
+          <!-- contact form -->
+          <div id="contact" class="contact-form">
+            <form action="submit" class="flex">
+              <legend>Let's get in touch!</legend>
+
+              <label for="name" class="sr-only">Your name here</label>
+              <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+              <label for="email" class="sr-only">Your email here</label>
+              <input type="email" name="email" id="email" placeholder="Your Email" required>
+
+              <label for="message" class="sr-only">Your message here</label>
+              <textarea name="message" id="message" cols="30" rows="4" required placeholder="Your Message"></textarea>
+
+              <button type="submit">Send</button>
+
+            </form>
+          </div>
+
         </div>
 
       </div>
-
-      <button type="button"><a href="https://github.com/Jon-Ledo" target="_blank">Visit my GitHub</a></button>
-
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrapper">
-
-      <div class="contact__container">
-
-        <div class="contact__container-socials">
-
-          <p class="sr-only">Git Hub Link</p>
-          <a href="https://github.com/Jon-Ledo" target="_blank"><i class="fab fa-github"></i></a>
-
-          <p class="sr-only">Twitter Link</p>
-          <a href="https://twitter.com/LedoJon"><i class="fab fa-twitter"></i></a>
-
-          <p class="sr-only">LinkedIn Link</p>
-          <a href="https://www.linkedin.com/in/jonathan-ledo-16a71120a/"><i class="fab fa-linkedin"></i></a>
-
-        </div>
-
-
-
-        <!-- contact form -->
-        <div id="contact" class="contact-form">
-          <form action="submit" class="flex">
-            <legend>Let's get in touch!</legend>
-
-            <label for="name" class="sr-only">Your name here</label>
-            <input type="text" name="name" id="name" placeholder="Your Name" required>
-
-            <label for="email" class="sr-only">Your email here</label>
-            <input type="email" name="email" id="email" placeholder="Your Email" required>
-
-            <label for="message" class="sr-only">Your message here</label>
-            <textarea name="message" id="message" cols="30" rows="4" required placeholder="Your Message"></textarea>
-
-            <button type="submit">Send</button>
-
-          </form>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer class="wrapper">
     <p>&#169; 2021. All rights reserved.</p>

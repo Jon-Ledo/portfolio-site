@@ -38,7 +38,8 @@ footer {
 }
 
 
-.flex {
+.flex,
+.flex-container {
   display: flex;
   justify-content: center;
   align-items: center;

@@ -58,6 +58,11 @@
 
     li:nth-of-type(n+2) {
       margin-left: 50px;
+
+      & a:hover {
+        background-color: $red-accent;
+        border-radius: 3px;
+      }
     } 
 
     li:first-child {

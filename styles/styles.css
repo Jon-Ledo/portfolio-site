@@ -351,6 +351,11 @@ footer {
   margin-left: 50px;
 }
 
+.nav-bar .nav-bar__list-container li:nth-of-type(n+2) a:hover {
+  background-color: #842002;
+  border-radius: 3px;
+}
+
 .nav-bar .nav-bar__list-container li:first-child {
   background: #842002;
   border-radius: 5px;
@@ -453,7 +458,7 @@ header img {
 }
 
 .main__bubble.main__bubble3, .main__bubble.main__bubble2 {
-  margin-left: -20px;
+  margin-left: -40px;
 }
 
 .main__bubble .main__bubble-title {
@@ -532,7 +537,7 @@ header img {
 .portfolio button a {
   font-size: 2.4rem;
   font-family: "Oswald", sans-serif;
-  padding: 15px 30px;
+  padding: 15px 40px;
   text-decoration: none;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -607,6 +612,7 @@ header img {
 
 .contact .contact__container .contact__container-socials .fab {
   font-size: 5rem;
+  padding: 10px;
   color: #CECEC7;
   text-shadow: 0px 2px 2px #333;
 }
@@ -715,15 +721,17 @@ header img {
   background: #842002;
 }
 
+@media (max-width: 1150px) {
+  .gallery .gallery__item:nth-child(2n+1) {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 800px) {
   h2,
   h3,
   legend {
     font-size: 3.6rem;
-  }
-  .main__bubble {
-    width: 250px;
-    height: 250px;
   }
   .main__bubble .main__bubble-title {
     font-size: 2.5rem;
@@ -733,7 +741,10 @@ header img {
     font-size: 1.3rem;
     margin-bottom: 8px;
   }
-  .gallery__item:nth-child(2n+1) {
+  .gallery .gallery__item {
+    margin-left: 10px;
+  }
+  .gallery .gallery__item:nth-child(2n+1) {
     margin-left: 0;
   }
   .portfolio button {
@@ -745,7 +756,7 @@ header img {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   header h1 {
     font-size: 4.8rem;
     margin-top: 70px;
@@ -792,10 +803,6 @@ header img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-  .flex-container .main__bubble {
-    width: 284px;
-    height: 284px;
   }
   .flex-container .main__bubble.main__bubble3, .flex-container .main__bubble.main__bubble2 {
     margin-left: 0px;
@@ -855,9 +862,16 @@ header img {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 438px) {
   .portfolio button a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 350px) {
+  .portfolio button a {
+    font-size: 1.2rem;
     padding: 10px 30px;
   }
   .gallery .gallery__description {
@@ -867,6 +881,6 @@ header img {
 
 @media (max-width: 320px) {
   .portfolio button a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }

@@ -274,7 +274,8 @@ footer {
   margin: 0 auto;
 }
 
-.flex {
+.flex,
+.flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,17 +787,17 @@ header img {
   legend {
     font-size: 3rem;
   }
-  .flex {
+  .flex-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .flex .main__bubble {
+  .flex-container .main__bubble {
     width: 284px;
     height: 284px;
   }
-  .flex .main__bubble::before {
+  .flex-container .main__bubble::before {
     content: '';
     position: absolute;
     top: 0;
@@ -808,21 +809,14 @@ header img {
     opacity: 0.3;
     z-index: -1;
   }
-  .flex .main__bubble.main__bubble3, .flex .main__bubble.main__bubble2 {
+  .flex-container .main__bubble.main__bubble3, .flex-container .main__bubble.main__bubble2 {
     margin-left: 0px;
     margin-top: -45px;
   }
-  .flex .main__bubble .main__bubble-title {
+  .flex-container .main__bubble .main__bubble-title {
     font-size: 2.5rem;
     margin-top: 60px;
     color: #BD3B13;
-  }
-  .flex .main__bubble p {
-    font-size: 1.2rem;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin: 0;
-    margin-bottom: 10px;
   }
   .gallery {
     -ms-flex-wrap: wrap;
@@ -845,9 +839,24 @@ header img {
   .gallery .gallery__item:nth-child(2n+1), .gallery .gallery__item:nth-child(3n+1) {
     margin-left: 0;
   }
-  .gallery .gallery__description {
-    font-size: 1.4rem;
-    margin-top: 15px;
-    margin-bottom: 45px;
+  .portfolio button {
+    margin-left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .portfolio button:hover, .portfolio button:focus, .portfolio button:active {
+    background: #842002;
+  }
+  .portfolio button::after {
+    display: none;
+  }
+  .portfolio button a {
+    font-size: 2rem;
+    font-family: "Oswald", sans-serif;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgba(189, 59, 19, 0.2);
   }
 }

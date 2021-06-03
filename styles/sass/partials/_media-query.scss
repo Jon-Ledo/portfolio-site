@@ -139,30 +139,10 @@
       width: 284px;
       height: 284px;
   
-      // get an opague background for the containers
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../../../assets/honeycomb-34984_640.png);
-        border-radius: 50%;
-        opacity: 0.3;
-        z-index: -1;
-      }
-  
       &.main__bubble3,
       &.main__bubble2 {
         margin-left: 0px;
         margin-top: -45px;
-      }
-  
-      .main__bubble-title {
-        font-size: 2.5rem;
-        margin-top: 60px;
-        color: $red;
       }
     }
   }
@@ -172,31 +152,8 @@
     justify-content: center;
 
     .gallery__item {
-      width: 300px;
-      height: auto;
       margin-left: 0px;
-      
-      img {
-        outline: 1px solid $grey;
-        width: 297px;
-        height: 183px;
-        position: relative;
-        
-        // &:before {
-        //   content: '';
-        //   position: absolute;
-        //   top: 0;
-        //   left: 0;
-        //   right: 0;
-        //   bottom: 0;
-          
-        //   &:before:hover {
-        //     background-color: $grey;
-        //   }
-        // }
-      }
 
-      // only when 3 images side by side 
       &:nth-child(2n+1),
       &:nth-child(3n+1) {
         margin-left: 0; 
@@ -208,12 +165,7 @@
     button {
       margin-left: 50%;
       transform: translateX(-50%);
-
-      &:hover,
-      &:focus,
-      &:active {
-        background: $red-accent;
-      }
+      margin-bottom: 200px;
 
       // remove once bars are fixed
       &::after {
@@ -222,13 +174,22 @@
       
       a {
         font-size: 2rem;
-        font-family: $header-font;
-        padding: 15px 30px;
-        text-decoration: none;
-        color: $white-text;
-        text-transform: uppercase;
-        text-shadow: 2px 2px rgba(189, 59, 19, 0.2);
       }
     }
+  }
+
+  .contact {
+    .contact__container {
+      .contact__container-socials {
+        align-items: flex-start;
+        position: relative;
+        top: -145px;
+        width: 100%;
+      }
+    }
+  }
+
+  footer {
+    padding: 70px 0px 20px;
   }
 }

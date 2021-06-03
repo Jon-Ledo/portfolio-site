@@ -797,26 +797,9 @@ header img {
     width: 284px;
     height: 284px;
   }
-  .flex-container .main__bubble::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url(../../../assets/honeycomb-34984_640.png);
-    border-radius: 50%;
-    opacity: 0.3;
-    z-index: -1;
-  }
   .flex-container .main__bubble.main__bubble3, .flex-container .main__bubble.main__bubble2 {
     margin-left: 0px;
     margin-top: -45px;
-  }
-  .flex-container .main__bubble .main__bubble-title {
-    font-size: 2.5rem;
-    margin-top: 60px;
-    color: #BD3B13;
   }
   .gallery {
     -ms-flex-wrap: wrap;
@@ -826,15 +809,7 @@ header img {
             justify-content: center;
   }
   .gallery .gallery__item {
-    width: 300px;
-    height: auto;
     margin-left: 0px;
-  }
-  .gallery .gallery__item img {
-    outline: 1px solid #CECEC7;
-    width: 297px;
-    height: 183px;
-    position: relative;
   }
   .gallery .gallery__item:nth-child(2n+1), .gallery .gallery__item:nth-child(3n+1) {
     margin-left: 0;
@@ -843,20 +818,23 @@ header img {
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-  }
-  .portfolio button:hover, .portfolio button:focus, .portfolio button:active {
-    background: #842002;
+    margin-bottom: 200px;
   }
   .portfolio button::after {
     display: none;
   }
   .portfolio button a {
     font-size: 2rem;
-    font-family: "Oswald", sans-serif;
-    padding: 15px 30px;
-    text-decoration: none;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    text-shadow: 2px 2px rgba(189, 59, 19, 0.2);
+  }
+  .contact .contact__container .contact__container-socials {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    position: relative;
+    top: -145px;
+    width: 100%;
+  }
+  footer {
+    padding: 70px 0px 20px;
   }
 }

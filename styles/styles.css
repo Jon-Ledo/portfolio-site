@@ -745,7 +745,7 @@ header img {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 700px) {
   header h1 {
     font-size: 4.8rem;
     margin-top: 70px;
@@ -834,7 +834,39 @@ header img {
     top: -145px;
     width: 100%;
   }
+  .contact-form {
+    position: relative;
+  }
+  .contact-form form {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+  }
+  .contact-form form input {
+    margin-top: 10px;
+    width: 80%;
+  }
+  .contact-form form textarea {
+    width: 80%;
+    font-size: 1.2rem;
+  }
   footer {
     padding: 70px 0px 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .portfolio button a {
+    font-size: 1.4rem;
+    padding: 10px 30px;
+  }
+  .gallery .gallery__description {
+    text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio button a {
+    font-size: 1.2rem;
   }
 }

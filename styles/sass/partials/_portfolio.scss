@@ -49,8 +49,8 @@
     &:hover,
     &:focus,
     &:active {
-        background: $red-accent;
-      }
+      background: $red-accent;
+    }
 
     // make this positioned next to something else > button hovers red 
     &::after {

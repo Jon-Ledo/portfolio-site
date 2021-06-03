@@ -9,6 +9,7 @@
     z-index: 1;
   }
 
+  // double bars
   h2::before {
     content: '';
     position: absolute;
@@ -21,7 +22,8 @@
     border-bottom: 1px solid $grey;
     z-index: -1;
   }
-
+  
+  // double bars
   h2::after {
     content: '';
     position: absolute;

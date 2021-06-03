@@ -43,7 +43,7 @@
 }
 
 // Galaxy S9 + android 7.0
-@media (max-width: 360px) {
+@media (max-width: 450px) {
   header {
     h1 {
       font-size: 4.8rem;
@@ -52,8 +52,9 @@
 
     p {
       font-size: 1.6rem;
-      margin: 0;
-      width: 100%;
+      margin: 0 auto;
+      width: 90%;
+      
     }
 
     .wrapper {
@@ -83,17 +84,8 @@
       li:nth-of-type(n+2) {
         margin-left: 0px;
       } 
-  
-      li:first-child {
-        background: $red-accent;
-        border-radius: 5px;
-        margin-left: 0;
-        box-shadow: 1px 1px rgba(165, 164, 164, 0.5);
-        padding: 7px 10px;
-      }
     }
   }
-
   /* 
   NOTE CODE FOR WHEN MORE NAV OPTIONS APPEAR
   BURGER MENU ICON AND UNHIDE STYLES WITH CSS 
@@ -134,4 +126,95 @@
   // .burger-menu:checked ~ ul li a {
 	// 	display: block;
 	// }
+
+  h2,
+  h3,
+  legend {
+    font-size: 3rem;
+  }
+
+  .flex {
+    flex-direction: column;
+    .main__bubble {
+      width: 284px;
+      height: 284px;
+  
+      // get an opague background for the containers
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../../assets/honeycomb-34984_640.png);
+        border-radius: 50%;
+        opacity: 0.3;
+        z-index: -1;
+      }
+  
+      &.main__bubble3,
+      &.main__bubble2 {
+        margin-left: 0px;
+        margin-top: -45px;
+      }
+  
+      .main__bubble-title {
+        font-size: 2.5rem;
+        margin-top: 60px;
+        color: $red;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .gallery__item {
+      width: 300px;
+      height: auto;
+      margin-left: 0px;
+      
+      img {
+        outline: 1px solid $grey;
+        width: 297px;
+        height: 183px;
+        position: relative;
+        
+        // &:before {
+        //   content: '';
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+          
+        //   &:before:hover {
+        //     background-color: $grey;
+        //   }
+        // }
+      }
+
+      // only when 3 images side by side 
+      &:nth-child(2n+1),
+      &:nth-child(3n+1) {
+        margin-left: 0; 
+      }
+    }
+
+    .gallery__description {
+      font-size: 1.4rem;
+      margin-top: 15px;
+      margin-bottom: 45px;
+    }
+  }
 }

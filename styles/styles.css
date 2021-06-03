@@ -860,13 +860,13 @@ header img {
     font-size: 1.4rem;
     padding: 10px 30px;
   }
-}
-
-@media (max-width: 360px) {
-  .portfolio button a {
-    font-size: 1.2rem;
-  }
   .gallery .gallery__description {
     text-align: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .portfolio button a {
+    font-size: 1.2rem;
   }
 }

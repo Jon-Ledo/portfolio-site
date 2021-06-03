@@ -72,6 +72,10 @@
       color: $white-text;
       text-transform: uppercase;
       text-shadow: 2px 2px rgba(189, 59, 19, 0.2);
+
+      // &:focus {
+      //   outline: 1px solid #333;
+      // }
     }
   }
 }
@@ -103,6 +107,11 @@
       //   &:before:hover {
       //     background-color: $grey;
       //   }
+      // }
+
+      // &:focus {
+      //   background: #333;
+      //   outline: 2px solid #333;
       // }
     }
 

@@ -1,0 +1,220 @@
+// Tablets
+@media (max-width: 800px) {
+  h2,
+  h3,
+  legend {
+    font-size: 3.6rem;
+  }
+
+  .main__bubble {
+    width: 250px;
+    height: 250px;
+
+    .main__bubble-title {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.3rem;
+      margin-bottom: 8px;
+    }
+  }
+
+  .gallery__item {
+    &:nth-child(2n+1) {
+      margin-left: 0; 
+    }
+  }
+
+  .portfolio {
+    button {
+      margin-left: calc(100% - 220px);
+    }
+  }
+
+  .contact {
+    .contact__container {
+      .contact__container-socials {
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+// Galaxy S9 + android 7.0
+@media (max-width: 450px) {
+  header {
+    h1 {
+      font-size: 4.8rem;
+      margin-top: 70px;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin: 0 auto;
+      width: 90%;
+      
+    }
+
+    .wrapper {
+      width: 100%;
+    }
+  }
+
+  // remove the logo
+  .nav-bar {
+    margin-top: 0;
+
+    .nav-bar__logo {
+      display: none;
+    }
+
+    .nav-bar__list-container {
+      justify-content: space-around;
+      padding-left: 0;
+
+      li a {
+        font-size: 1.6rem;
+        font-family: $header-font;
+        color: $white-text;
+        padding: 15px;
+      }
+  
+      li:nth-of-type(n+2) {
+        margin-left: 0px;
+      } 
+    }
+  }
+  /* 
+  NOTE CODE FOR WHEN MORE NAV OPTIONS APPEAR
+  BURGER MENU ICON AND UNHIDE STYLES WITH CSS 
+  */
+
+  // .nav-bar {
+  //   position: relative;
+  //   .nav-bar__list-container {
+  //     position: absolute;
+  //     top: 20px;
+  //     right: 0;
+  //     // flex-direction: column;
+  
+  //     li a {
+  //       font-size: 1.8rem;
+  //       padding: 15px;
+  //       display: none;
+  //     }
+  
+  //     li:nth-of-type(n+2) {
+  //       margin-left: 0;
+  //     } 
+  
+  //     li:first-child {
+  //       background: none;
+  //       margin-left: 0;
+  //       box-shadow: none;
+  //       padding: 0;
+  //     }
+  //   }
+  // }
+
+  // .hamburger label {
+  //   display: block;
+  //   margin-top: 10px;
+  // }
+
+  // .burger-menu:checked ~ ul li a {
+	// 	display: block;
+	// }
+
+  h2,
+  h3,
+  legend {
+    font-size: 3rem;
+  }
+
+  .flex {
+    flex-direction: column;
+    .main__bubble {
+      width: 284px;
+      height: 284px;
+  
+      // get an opague background for the containers
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../../assets/honeycomb-34984_640.png);
+        border-radius: 50%;
+        opacity: 0.3;
+        z-index: -1;
+      }
+  
+      &.main__bubble3,
+      &.main__bubble2 {
+        margin-left: 0px;
+        margin-top: -45px;
+      }
+  
+      .main__bubble-title {
+        font-size: 2.5rem;
+        margin-top: 60px;
+        color: $red;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .gallery__item {
+      width: 300px;
+      height: auto;
+      margin-left: 0px;
+      
+      img {
+        outline: 1px solid $grey;
+        width: 297px;
+        height: 183px;
+        position: relative;
+        
+        // &:before {
+        //   content: '';
+        //   position: absolute;
+        //   top: 0;
+        //   left: 0;
+        //   right: 0;
+        //   bottom: 0;
+          
+        //   &:before:hover {
+        //     background-color: $grey;
+        //   }
+        // }
+      }
+
+      // only when 3 images side by side 
+      &:nth-child(2n+1),
+      &:nth-child(3n+1) {
+        margin-left: 0; 
+      }
+    }
+
+    .gallery__description {
+      font-size: 1.4rem;
+      margin-top: 15px;
+      margin-bottom: 45px;
+    }
+  }
+}

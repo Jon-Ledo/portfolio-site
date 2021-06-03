@@ -509,8 +509,9 @@ header img {
   z-index: -1;
 }
 
-.portfolio button {
+.portfolio .portfolio__btn-container {
   background: #BD3B13;
+  text-align: center;
   -webkit-box-shadow: 4px 4px rgba(189, 59, 19, 0.2);
           box-shadow: 4px 4px rgba(189, 59, 19, 0.2);
   padding: 15px 0;
@@ -519,11 +520,11 @@ header img {
   margin-left: calc(100% - 260px);
 }
 
-.portfolio button:hover, .portfolio button:focus, .portfolio button:active {
+.portfolio .portfolio__btn-container:hover, .portfolio .portfolio__btn-container:focus, .portfolio .portfolio__btn-container:active {
   background: #842002;
 }
 
-.portfolio button::after {
+.portfolio .portfolio__btn-container::after {
   content: '';
   position: absolute;
   left: 0;
@@ -534,7 +535,7 @@ header img {
   border-bottom: 1px solid #CECEC7;
 }
 
-.portfolio button a {
+.portfolio .portfolio__btn-container a {
   font-size: 2.4rem;
   font-family: "Oswald", sans-serif;
   padding: 15px 40px;
@@ -747,7 +748,7 @@ header img {
   .gallery .gallery__item:nth-child(2n+1) {
     margin-left: 0;
   }
-  .portfolio button {
+  .portfolio .portfolio__btn-container {
     margin-left: calc(100% - 220px);
   }
   .contact .contact__container .contact__container-socials {
@@ -821,16 +822,16 @@ header img {
   .gallery .gallery__item:nth-child(2n+1), .gallery .gallery__item:nth-child(3n+1) {
     margin-left: 0;
   }
-  .portfolio button {
+  .portfolio .portfolio__btn-container {
     margin-left: 50%;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     margin-bottom: 200px;
   }
-  .portfolio button::after {
+  .portfolio .portfolio__btn-container::after {
     display: none;
   }
-  .portfolio button a {
+  .portfolio .portfolio__btn-container a {
     font-size: 2rem;
   }
   .contact .contact__container .contact__container-socials {
@@ -863,14 +864,14 @@ header img {
 }
 
 @media (max-width: 438px) {
-  .portfolio button a {
+  .portfolio .portfolio__btn-container a {
     font-size: 1.3rem;
     padding: 10px 30px;
   }
 }
 
 @media (max-width: 350px) {
-  .portfolio button a {
+  .portfolio .portfolio__btn-container a {
     font-size: 1.2rem;
     padding: 10px 30px;
   }
@@ -880,7 +881,7 @@ header img {
 }
 
 @media (max-width: 320px) {
-  .portfolio button a {
+  .portfolio .portfolio__btn-container a {
     font-size: 1.1rem;
   }
 }

@@ -39,7 +39,7 @@
   }
 
   .portfolio {
-    button {
+    .portfolio__btn-container {
       margin-left: calc(100% - 220px);
     }
   }
@@ -172,7 +172,7 @@
   }
 
   .portfolio {
-    button {
+    .portfolio__btn-container {
       margin-left: 50%;
       transform: translateX(-50%);
       margin-bottom: 200px;
@@ -251,7 +251,7 @@
 // small screens
 @media (max-width: 438px ) {
   .portfolio {
-    button a {
+    .portfolio__btn-container a {
       font-size: 1.3rem;
       padding: 10px 30px; 
     }
@@ -261,7 +261,7 @@
 // *****************************************************************
 @media (max-width: 350px ) {
   .portfolio {
-    button a {
+    .portfolio__btn-container a {
       font-size: 1.2rem;
       padding: 10px 30px; 
     }
@@ -278,7 +278,7 @@
 // iPhone 5 
 @media (max-width: 320px ) {
   .portfolio {
-    button a {
+    .portfolio__btn-container a {
       font-size: 1.1rem;
     }
   }

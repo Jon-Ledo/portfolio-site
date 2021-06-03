@@ -37,8 +37,9 @@
     z-index: -1;
   }
 
-    button {
+    .portfolio__btn-container {
     background: $red;
+    text-align: center;
     box-shadow: 4px 4px rgba(189, 59, 19, 0.2);
     padding: 15px 0;
     border: none;

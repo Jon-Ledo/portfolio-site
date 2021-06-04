@@ -1,6 +1,21 @@
 // General Styles
 html {
   font-size: 62.5%;
+  z-index: 1;
+  position: relative;
+
+  // NOTE find better texture background
+  &::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url(../../../assets/paper-146904_1280.png);
+  opacity: 0.1;
+  z-index: -1;
+  }
 }
 
 body {

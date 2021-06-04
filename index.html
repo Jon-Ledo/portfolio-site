@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="portfolio site. Jon Ledo front end developer">
   <title>Jon Ledo's Portfolio</title>
 
   <script src="https://kit.fontawesome.com/ed48cba7cc.js" crossorigin="anonymous"></script>
@@ -55,7 +56,11 @@
     <section id="main" class="main">
       <div class="wrapper">
 
-        <h2>My Skillset</h2>
+        <div class="main__bars-container">
+          <div class="bars"></div>
+          <h2>My Skillset</h2>
+          <div class="bars"></div>
+        </div>
 
         <div class="flex flex-container">
 
@@ -65,7 +70,6 @@
             <p>Landing Pages</p>
             <p>Responsive Design</p>
             <p>Web Accessibility</p>
-            <p>RESTful API</p>
           </div>
 
           <div class="main__bubble main__bubble2">
@@ -80,6 +84,7 @@
             <p>Git Collaboration</p>
             <p>Adaptable</p>
             <p>React Application</p>
+            <p>RESTful API</p>
           </div>
 
         </div>
@@ -90,7 +95,11 @@
     <section id="portfolio" class="portfolio">
       <div class="wrapper">
 
-        <h2>Recent Work</h2>
+        <div class="main__bars-container flex">
+          <div class="bars"></div>
+          <h2>Recent Work</h2>
+          <div class="bars"></div>
+        </div>
 
         <!-- image gallery with clickable links -->
         <div class="gallery">
@@ -125,11 +134,13 @@
 
         </div>
 
-        <div class="portfolio__btn-container"><a href="https://github.com/Jon-Ledo" target="_blank"
-            rel="noreferrer">Visit my
-            GitHub</a></div>
-        <!-- <button type="button"><a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">Visit my
-            GitHub</a></button> -->
+        <div class="portfolio__btn-container">
+          <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer">
+            Visit my GitHub
+          </a>
+
+          <div class="bars"></div>
+        </div>
 
       </div>
     </section>
@@ -141,23 +152,11 @@
 
           <div class="contact__container-socials">
 
-            <!-- <p class="sr-only">Git Hub Link</p>
-            <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
-
-            <p class="sr-only">Twitter Link</p>
-            <a href="https://twitter.com/LedoJon" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
-
-            <p class="sr-only">LinkedIn Link</p>
-            <a href="https://www.linkedin.com/in/jonathan-ledo-16a71120a/" target="_blank" rel="noreferrer"><i
-                class="fab fa-linkedin"></i></a> -->
-
             <a href="https://github.com/Jon-Ledo" target="_blank" rel="noreferrer"><i class="fab fa-github"></i><span
                 class="sr-only">Git Hub Link</span></a>
 
-
             <a href="https://twitter.com/LedoJon" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i><span
                 class="sr-only">Twitter Link</span></a>
-
 
             <a href="https://www.linkedin.com/in/jonathan-ledo-16a71120a/" target="_blank" rel="noreferrer"><i
                 class="fab fa-linkedin"></i>

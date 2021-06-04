@@ -1,3 +1,4 @@
+// breakpoint when gallery can't show 3 images side by side
 @media (max-width: 1150px) {
   .gallery {
     .gallery__item {
@@ -35,12 +36,6 @@
       &:nth-child(2n+1) {
         margin-left: 0; 
       }
-    }
-  }
-
-  .portfolio {
-    .portfolio__btn-container {
-      margin-left: calc(100% - 220px);
     }
   }
 
@@ -134,6 +129,7 @@
   // .burger-menu:checked ~ ul li a {
 	// 	display: block;
 	// }
+  // NOTE this is code for when burger menu gets introduced!!! 
 
   h2,
   h3,
@@ -172,14 +168,8 @@
 
   .portfolio {
     .portfolio__btn-container {
-      margin-left: 50%;
-      transform: translateX(-50%);
+      text-align: center;
       margin-bottom: 200px;
-
-      // remove once bars are fixed
-      &::after {
-        display: none;
-      }
       
       a {
         font-size: 2rem;
@@ -251,18 +241,7 @@
 @media (max-width: 438px ) {
   .portfolio {
     .portfolio__btn-container a {
-      font-size: 1.3rem;
-      padding: 10px 30px; 
-    }
-  }
-}
-
-// *****************************************************************
-@media (max-width: 350px ) {
-  .portfolio {
-    .portfolio__btn-container a {
-      font-size: 1.2rem;
-      padding: 10px 30px; 
+      font-size: 1.6rem;
     }
   }
 
@@ -274,11 +253,27 @@
 }
 
 // *****************************************************************
+// @media (max-width: 350px ) {
+//   // .portfolio {
+//   //   .portfolio__btn-container a {
+//   //     font-size: 1.2rem;
+//   //     padding: 10px 30px; 
+//   //   }
+//   // }
+
+//   .gallery {
+//     .gallery__description {
+//       text-align: center;
+//     }
+//   }
+// }
+
+// *****************************************************************
 // iPhone 5 
-@media (max-width: 320px ) {
-  .portfolio {
-    .portfolio__btn-container a {
-      font-size: 1.1rem;
-    }
-  }
-}
+// @media (max-width: 320px ) {
+//   .portfolio {
+//     .portfolio__btn-container a {
+//       font-size: 1.1rem;
+//     }
+//   }
+// }

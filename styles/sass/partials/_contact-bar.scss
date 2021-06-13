@@ -32,7 +32,8 @@
       z-index: 2;
 
       // socials icons and effects
-      .fab {
+      .fab,
+      .fas {
         font-size: 5rem;
         padding: 10px;
         color: $grey;
@@ -68,20 +69,21 @@
     &::before {
       content: '';
       position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 380px;
-      height: 375px;
+      left: -8px;
+      right: -8px;
+      top: -8px;
+      bottom: -8px;
+      border: 8px solid $grey;
+      width: 388px;
+      height: 388px;
       border-radius: 50%;
       background: url(../../../assets/honeycomb-34984_640.png);
-      opacity: 0.2;
+      opacity: 0.3;
       z-index: -1;
     }
 
     legend {
-      font-size: 4rem;
+      font-size: 3.7rem;
       padding-top: 35px;
       text-shadow: 1px 1px $white-background, 2px 2px $text-shadow;
     }
@@ -130,7 +132,6 @@
       &:focus,
       &:active {
         background: $red-accent;
-        outline: 2px solid #333;
       }
     }
   }

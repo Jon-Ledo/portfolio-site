@@ -335,6 +335,7 @@ footer {
   width: 130px;
   height: 130px;
   background: url(../../../assets/layer-logo.png) #AC300A;
+  background-size: contain;
   position: absolute;
   top: -50%;
   border-radius: 50%;
@@ -349,8 +350,9 @@ footer {
           transform: translate(-50%, -50%);
   padding-bottom: 10px;
   color: #FCFBF6;
-  text-shadow: 2px 2px 2px #842002;
+  text-shadow: 3px 3px 2px #842002;
   text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .nav-bar .nav-bar__logo::before {
@@ -424,6 +426,7 @@ header p {
   font-size: 2.2rem;
   width: 80%;
   margin: 0 auto;
+  line-height: 3rem;
 }
 
 header img {
@@ -584,7 +587,7 @@ header img {
   font-size: 1.4rem;
   margin-top: 15px;
   margin-bottom: 45px;
-  line-height: 18px;
+  line-height: 2rem;
 }
 
 .gallery .gallery__item .gallery__description a {
@@ -646,7 +649,8 @@ header img {
   z-index: 2;
 }
 
-.contact .contact__container .contact__container-socials .fab {
+.contact .contact__container .contact__container-socials .fab,
+.contact .contact__container .contact__container-socials .fas {
   font-size: 5rem;
   padding: 10px;
   color: #CECEC7;
@@ -684,20 +688,21 @@ header img {
 .contact-form form::before {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 380px;
-  height: 375px;
+  left: -8px;
+  right: -8px;
+  top: -8px;
+  bottom: -8px;
+  border: 8px solid #CECEC7;
+  width: 388px;
+  height: 388px;
   border-radius: 50%;
   background: url(../../../assets/honeycomb-34984_640.png);
-  opacity: 0.2;
+  opacity: 0.3;
   z-index: -1;
 }
 
 .contact-form form legend {
-  font-size: 4rem;
+  font-size: 3.7rem;
   padding-top: 35px;
   text-shadow: 1px 1px #F0EFE9, 2px 2px #CDCDCD;
 }
@@ -746,7 +751,6 @@ header img {
 
 .contact-form form button:hover, .contact-form form button:focus, .contact-form form button:active {
   background: #842002;
-  outline: 2px solid #333;
 }
 
 @media (max-width: 1150px) {
